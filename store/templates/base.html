@@ -35,7 +35,7 @@
     </div>
     <div class="navigation">
       <div class="nav-center container d-flex">
-        <a href="index.html" class="logo"><h1>Dans</h1></a>
+        <a href="{%url 'index'%}" class="logo"><h1>Dans</h1></a>
 
         <ul class="nav-list d-flex">
           <li class="nav-item">
@@ -64,9 +64,9 @@
               <i class="bx bx-heart"></i>
               <span class="d-flex">0</span>
             </div>
-            <a href="cart.html" class="icon">
+            <a href="{%url 'basket-item'%}" class="icon">
               <i class="bx bx-cart"></i>
-              <span class="d-flex">0</span>
+              <span class="d-flex">{{cart_count}}</span>
             </a>
           </li>
         </ul>
@@ -82,9 +82,9 @@
             <i class="bx bx-heart"></i>
             <span class="d-flex">0</span>
           </div>
-          <a href="cart.html" class="icon">
+          <a href="{%url 'basket-item'%}" class="icon">
             <i class="bx bx-cart"></i>
-            <span class="d-flex">0</span>
+            <span class="d-flex">{{cart_count}}</span>
           </a>
         </div>
 
