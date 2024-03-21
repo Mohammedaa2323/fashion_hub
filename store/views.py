@@ -11,8 +11,6 @@ from django.views.decorators.csrf import csrf_exempt
 import razorpay
 
 
-KEY_ID="rzp_test_oXQ7ryQWc89NJz"
-KEY_SECRET="xEF6hlA8QWqWD6R87uN0Ek8c"
 
 
 # Create your views here.
