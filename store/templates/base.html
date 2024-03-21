@@ -24,7 +24,7 @@
   <body>
     <!-- Navigation -->
     <div class="top-nav">
-      <div class="container d-flex">
+      <div class="container d-flex ">
         <p>Order Online Or Call Us: (001) 2222-55555</p>
         <ul class="d-flex">
           <li><a href="#">About Us</a></li>
@@ -53,6 +53,7 @@
           <li class="nav-item">
             <a href="#contact" class="nav-link">Contact</a>
           </li>
+
           <li class="icons d-flex">
             <a href="login.html" class="icon">
               <i class="bx bx-user"></i>
@@ -78,14 +79,14 @@
           <div class="icon">
             <i class="bx bx-search"></i>
           </div>
-          <div class="icon">
-            <i class="bx bx-heart"></i>
-            <span class="d-flex">0</span>
-          </div>
+
           <a href="{%url 'basket-item'%}" class="icon">
             <i class="bx bx-cart"></i>
             <span class="d-flex">{{cart_count}}</span>
           </a>
+          <div class="icon">
+            <a href="{%url 'signout'%}" class="nav-link">Logout</a>
+          </div>
         </div>
 
         <div class="hamburger">
